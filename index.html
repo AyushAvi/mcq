@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MCQ</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="question">
+        <div class="mcq">
+            <div class="questions">
+                What is React?
+            </div>
+            <form class="options" id="ans-1" name="que">
+                <input type="radio" id="ans" value=0 name="que-1">JS Framework  
+                <input type="radio" id="ans" value=1 name="que-1">JS Library
+                <input type="radio" id="ans" value=0 name="que-1">Markup Langugage
+                <input type="radio" id="ans" value=0 name="que-1">None of the above
+            </form>
+        </div>
+        <div class="mcq">
+            <div class="questions">
+                What of the following is used in React.js to increase performance?
+            </div>
+            <form class="options" name="que">
+                <input type="radio" value=0 name="que-2">Original DOM</input>
+                <input type="radio" value=1 name="que-2">Virtual DOM</input>
+                <input type="radio" value=0 name="que-2">All of the above</input>
+                <input type="radio" value=0 name="que-2">None of the above</input>
+            </form>
+        </div>
+        <div class="mcq">
+            <div class="questions">
+                Which of the following acts as the input of a class-based component?
+            </div>
+            <form class="options" name="que">
+                <input type="radio" value=0 name="que-3">Class</input>
+                <input type="radio" value=0 name="que-3">Factory</input>
+                <input type="radio" value=0 name="que-3">Render</input>
+                <input type="radio" value=1 name="que-3">Props</input>
+            </form>
+        </div>
+        <div class="mcq">
+            <div class="questions">
+                Which of the following keyword is used to create a class inheritance?
+            </div>
+            <form class="options" name="que">
+                <input type="radio" value=0 name="que-4">Create</input>
+                <input type="radio" value=0 name="que-4">Inherits</input>
+                <input type="radio" value=1 name="que-4">Extends</input>
+                <input type="radio" value=0 name="que-4">This</input>
+            </form>
+        </div>
+        <div class="mcq">
+            <div class="questions">
+                How many numbers of elements a valid react component can return?
+            </div>
+            <form class="options" name="que">
+                <input type="radio" value=1 name="que-5">1</input>
+                <input type="radio" value=0 name="que-5">2</input>
+                <input type="radio" value=0 name="que-5">3</input>
+                <input type="radio" value=0 name="que-5">Infinite</input>
+            </form>
+        </div>
+    </div>
+    <div class="btn">
+        <button onclick="answerSubmit()">Submit Answers</button>
+    </div>
+
+    <div class="score-display">
+        <h1 id="score-title"></h1>
+        <p id="score"></p>
+        <button onclick="reset()">Reset</button>
+    </div>
+    
+
+    <script src="./index.js"></script>
+</body>
+</html>
